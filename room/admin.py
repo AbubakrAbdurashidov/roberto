@@ -30,8 +30,8 @@ class RoomAdmin(admin.ModelAdmin):
 
 @admin.register(RoomImages)
 class RoomImagesAdmin(admin.ModelAdmin):
-    list_display = ('id', 'get_image')
-    list_display_links = ('get_image',)
+    list_display = ('id', 'image')
+    list_display_links = ('id', )
     search_fields = ('room',)
 
 
